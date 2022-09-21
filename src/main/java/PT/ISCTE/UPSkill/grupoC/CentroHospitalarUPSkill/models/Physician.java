@@ -1,6 +1,9 @@
 package PT.ISCTE.UPSkill.grupoC.CentroHospitalarUPSkill.models;
 
-public class Physician extends Person{
+import javax.persistence.Entity;
+
+@Entity
+public class Physician extends Employee {
 
     private String cedulaProfissional;
     private String especialidade;

@@ -19,6 +19,18 @@ public class Employee {
     @GeneratedValue
     private long id;
 
+    public Employee(){}
+    public Employee(String nomeCompleto, String username, String password, LocalDate dataNascimento, String morada, String email, String telemovel, String localidade){
+        this.nomeCompleto=nomeCompleto;
+        this.username=username;
+        this.password=password;
+        this.dataNascimento=dataNascimento;
+        this.morada=morada;
+        this.email=email;
+        this.telemovel=telemovel;
+        this.localidade =localidade;
+    }
+
     public void setNomeCompleto(String nomeCompleto) {
         this.nomeCompleto = nomeCompleto;
     }
